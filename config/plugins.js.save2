@@ -1,0 +1,21 @@
+module.exports = ({ env }) => ({
+  email: {
+    config: {
+      provider: 'nodemailer',
+      providerOptions: {
+        host: 'mail.technocratdevelopers.in',
+        port: 465,
+	secure: true,
+        auth: {
+          user: 'no-reply@technocratdevelopers.in',
+          pass: 'Xu0$h,uyd0s*',
+        },
+        // ... any custom nodemailer options
+      },
+      settings: {
+        defaultFrom: 'no-reply@technocratdevelopers.in',
+        defaultReplyTo: 'no-reply@technocratdevelopers.in',
+      },
+    },
+  },
+});
